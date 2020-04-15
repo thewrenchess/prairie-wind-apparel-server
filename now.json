@@ -1,0 +1,12 @@
+{
+  "builds": [{ "src": "app.js", "use": "@now/node-server" }],
+  "env": {
+    "WEATHER_API_KEY": "@weather_api_key"
+  },
+  "routes": [
+    {
+      "src": "/api",
+      "dest": "/app.js"
+    }
+  ]
+}
